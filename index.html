@@ -10,17 +10,38 @@
       href="./media/images/KCicon.png"
       type="image/x-icon"
     />
+
+    <!--External css file linkup-->
+    <link rel="stylesheet" href="./css/navbarstyle.css" />
   </head>
   <body>
     <header id="pageHeader">
-      <h1>Kyler's Portfolio Website</h1>
-
       <!--Creates the navigation bar at the top of website-->
       <div id="navContainer">
         <nav id="navBar">
-          <a href="./index.html" class="navOption">Home</a>
-          <a href="./html/my_resume.html" class="navOption">Resume</a>
-          <a href="./html/my_fun_facts.html" class="navOption">Fun Facts</a>
+          <!--Website Logo Container-->
+          <div id="logoContainer">
+            <img
+              src="./media/images/KCicon.png"
+              alt="website logo"
+              height="50"
+            />
+          </div>
+
+          <h1>Kyler's Portfolio Website</h1>
+
+          <!--Navigation Menu Container-->
+          <ul class="nav-links">
+            <!--Hamburger menu icon and checkbox hack-->
+            <input type="checkbox" id="checkbox-toggle" />
+            <label for="checkbox-toggle" class="hamburger">&#9776;</label>
+
+            <div class="nav-menu">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./html/my_resume.html">Resume</a></li>
+              <li><a href="./html/my_fun_facts.html">Fun Facts</a></li>
+            </div>
+          </ul>
         </nav>
       </div>
 
