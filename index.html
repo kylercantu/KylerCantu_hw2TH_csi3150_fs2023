@@ -12,14 +12,14 @@
     />
 
     <!--External css file linkup-->
-    <link rel="stylesheet" href="./css/navbarstyle.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header id="pageHeader">
       <!--Creates the navigation bar at the top of website-->
       <div id="navContainer">
         <nav id="navBar">
-          <!--Website Logo Container-->
+          <!-- Website Logo Container -->
           <div id="logoContainer">
             <img
               src="./media/images/KCicon.png"
@@ -27,8 +27,6 @@
               height="50"
             />
           </div>
-
-          <h1>Kyler's Portfolio Website</h1>
 
           <!--Navigation Menu Container-->
           <ul class="nav-links">
@@ -51,52 +49,55 @@
     <hr />
 
     <main>
-      <!--Displays self photo of me on page-->
-      <div id="photoContainer">
-        <img
-          src="./media/images/me.jpg"
-          alt="Self Photo"
-          height="300"
-          width="250"
-        />
-        <pre>
-          "Everyone you meet is fighting a battle you know nothing about. Be
-          Kind. Always." - Robin Williams
-        </pre>
-      </div>
-
+      <h1 class="page-heading">Kyler's Portfolio Website</h1>
       <!--About Me Section of website-->
       <article id="aboutMeContainer">
-        <h2>About me</h2>
-        <p class="aboutMe">
-          Hello current reader(s), my name is Kyler and I'm from Troy, Michigan!
-          I'm currently attending Oakland University and pursuing a Bachelor's
-          degree in Computer Science. Prior to majoring in Computer Science, I
-          spent about two and a half years pursuing an entirely different
-          degree, which was Criminal Justice. I come from a Law Enforcement
-          family and always thought that's what I wanted to do in the future,
-          but at the same time I was always the kid who loved playing with
-          technology/electronics. I've always heard about coding/programming
-          growing up but never thought that I could do it since I had zero
-          experience and never wrote a single line of code once in my life. Fast
-          forward to my college years, while still pursuing my Criminal Justice
-          Degree, I decided to attend an Intro to Coding Workshop at Grand
-          Circus in Detroit which was a one-day two hour session where they
-          taught the very basics of the java programming language. Ever since I
-          wrote that first line of code, I knew that this is what I wanted to
-          do!
-        </p>
-        <p class="aboutMe">
-          My short term goal while I'm still a student is to get internships so
-          that I can gain knowledge and understand how the industry works in the
-          real world. For my long term goal in this profession, as of right now,
-          I would like to hopefully become a back-end engineer! To know more
-          about me, click on my
-          <a href="./html/my_resume.html" class="navOption">Resume</a> page
-          and/or
-          <a href="./html/my_fun_facts.html" class="navOption">Fun Facts</a>
-          page!
-        </p>
+        <div class="main-text">
+          <h2>About me</h2>
+          <p>
+            Hello current reader(s), my name is Kyler and I'm from Troy,
+            Michigan! I'm currently attending Oakland University and pursuing a
+            Bachelor's degree in Computer Science. Prior to majoring in Computer
+            Science, I spent about two and a half years pursuing an entirely
+            different degree, which was Criminal Justice. I come from a Law
+            Enforcement family and always thought that's what I wanted to do in
+            the future, but at the same time I was always the kid who loved
+            playing with technology/electronics. I've always heard about
+            coding/programming growing up but never thought that I could do it
+            since I had zero experience and never wrote a single line of code
+            once in my life. Fast forward to my college years, while still
+            pursuing my Criminal Justice Degree, I decided to attend an Intro to
+            Coding Workshop at Grand Circus in Detroit which was a one-day two
+            hour session where they taught the very basics of the java
+            programming language. Ever since I wrote that first line of code, I
+            knew that this is what I wanted to do!
+          </p>
+          <br />
+          <p>
+            My short term goal while I'm still a student is to get internships
+            so that I can gain knowledge and understand how the industry works
+            in the real world. For my long term goal in this profession, as of
+            right now, I would like to hopefully become a back-end engineer! To
+            know more about me, click on my
+            <a href="./html/my_resume.html" class="navOption">Resume</a> page
+            and/or
+            <a href="./html/my_fun_facts.html" class="navOption">Fun Facts</a>
+            page!
+          </p>
+        </div>
+
+        <div id="photoContainer">
+          <img
+            src="./media/images/me.jpg"
+            alt="Self Photo"
+            height="300"
+            width="250"
+          />
+          <p>
+            "Everyone you meet is fighting a battle you know nothing about. Be
+            Kind. Always." - Robin Williams
+          </p>
+        </div>
       </article>
 
       <!--Displays a progress bar representing how much longer I have until graduation-->
@@ -106,6 +107,11 @@
         <progress value="113" max="130"></progress>
       </section>
     </main>
+
+    <!--Call to action - Contact me button-->
+    <div class="buttonContainer">
+      <a href="mailto:kylercantu@oakland.edu">Email Me</a>
+    </div>
 
     <br />
     <hr />
